@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	form(method="post",enctype="multipart/form-data",action="/upload-file")
+		fieldset
+			legend 上传
+
+			p
+				label(for="thumbnail") 文件:
+					input(type="file", name="thumbnail")
+		p.buttons
+			input(type="submit", value="提交")

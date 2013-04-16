@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  br
+  a(href="/upload") 我要上传
+  br
+  ul
+  for mdfile in mdfiles
+     li: a(href="/markdown/#{mdfile}") #{mdfile}
+
